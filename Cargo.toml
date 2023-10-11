@@ -14,7 +14,7 @@ keywords = ["wasm", "web", "bulma", "sass", "yew"]
 derive_more = { version = "0.99.17", default-features = false, features = ["display"] }
 web-sys = { version = "0.3.61", features = ["Element", "File", "HtmlCollection", "HtmlSelectElement"] }
 yew = { version = "0.21.0", features = ["csr"] }
-yew-agent = "0.3.0"
+yew-agent = { git = "https://github.com/yewstack/yew", rev = "04909dd942eb64285652d96a2621bdf7be3fa912" }
 yew-router = { version = "0.18.0", optional = true }
 wasm-bindgen = "0.2.84"
 serde = { version = "1.0.152", features = ["derive"] }
@@ -28,4 +28,4 @@ docinclude = [] # Used only for activating `doc(include="...")` on nightly.
 features = ["docinclude"] # Activate `docinclude` during docs.rs build.
 
 [patch.crates-io]
-yew-agent = { path = "../yew/packages/yew-agent/" }
+# yew-agent = { path = "../yew/packages/yew-agent/" }
